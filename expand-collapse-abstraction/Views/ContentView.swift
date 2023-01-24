@@ -27,6 +27,9 @@ struct ContentView: View {
                 CollapsableStack(showStackView: $showStackView) {
                     CollapsableView(expanded: AnyView(
                         VStack {
+                            Text("Name: \(name)")
+                                .padding()
+                                .foregroundColor(.orange)
                             TextField("Name", text: $name)
                                 .padding()
                                 .frame(width: UIScreen.main.bounds.width * 0.6, height: 40)
@@ -40,6 +43,9 @@ struct ContentView: View {
 
                     CollapsableView(expanded: AnyView(
                         VStack {
+                            Text("Age: \(age)")
+                                .padding()
+                                .foregroundColor(.orange)
                             TextField("Age", text: $age)
                                 .padding()
                                 .frame(width: UIScreen.main.bounds.width * 0.6, height: 40)
@@ -53,6 +59,9 @@ struct ContentView: View {
 
                     CollapsableView(expanded: AnyView(
                         VStack {
+                            Text("Anime: \(anime)")
+                                .padding()
+                                .foregroundColor(.orange)
                             TextField("Anime", text: $anime)
                                 .padding()
                                 .frame(width: UIScreen.main.bounds.width * 0.6, height: 40)
